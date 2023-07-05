@@ -1,0 +1,85 @@
+body, html, body > div:first-child,
+div#_next,
+div#__next > div
+{
+    height: 100%;
+    background-color: #373a3c;
+}
+
+.overflow {
+    height: 100%;
+    overflow: hidden;
+}
+
+.overflow .card-img {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img:hover {
+ 
+    transform: scale(1.8);
+}
+
+#nprogress .bar {
+    background: #ff5357 !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: #ff5357;
+    border-left-color: #ff5357;
+}
+
+
+.h1-name {
+    font-family: 'Carter One', cursive;
+    font-size: 55px;
+    margin-top: -21px;
+}
+
+.subtitulo {
+    font-family: 'Comic Neue', cursive;
+}
+
+.sobre-mi {
+    margin-top: 20px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 21px;
+}
+
+.links-contacto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+.links {
+    margin: 10px;
+    color: #ff5357;
+    text-decoration: none;
+} 
+
+.links:hover {
+    color: red;
+}
+
+
+.container-img-skill {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.container-img-skill:hover {
+    border:1px solid #ccc;
+    box-shadow: 1px 10px 10px #8f989d;
+}
