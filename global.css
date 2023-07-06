@@ -1,3 +1,4 @@
+
 body, html, body > div:first-child,
 div#_next,
 div#__next > div
@@ -82,4 +83,44 @@ li {
 .container-img-skill:hover {
     border:1px solid #ccc;
     box-shadow: 1px 10px 10px #8f989d;
+}
+
+.icons-navbar {
+    margin:0 5px;
+    color:#ff5357;
+    cursor:pointer;
+}
+
+.icons-navbar:hover {
+    color:red;
+}
+
+.navbar-desplegable {
+    color:white;
+    background: #333;
+    border:1px solid #ff5357;
+    border-radius:10px;
+    max-width:270px; 
+    margin:0 auto; 
+    position:fixed;
+    z-index: 1000;
+
+}
+
+.ul-nav-desplegable {
+    display:flex; 
+    justify-content:center; 
+    margin: 0 auto; 
+    padding: 5px
+}
+
+.container-nav-desplegable {
+    display: flex; 
+    justify-content:center; 
+    margin-bottom:100px;
+}
+
+
+.section-height {
+    height: 100vh;
 }

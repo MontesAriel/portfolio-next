@@ -108,30 +108,30 @@ export const projects = [
     
     {
         image:"./tic-tac-toe.png",
-        title:"Tic Tac Toe",
+        title:"App Clima",
+        description:"metereología",
+        lenguajes:"React, Vite"
+    },
+
+    {
+        image:"./tic-tac-toe.png",
+        title:"Web Scraping",
+        description:"Scraping",
+        lenguajes:"Express, firebase, libreria puppeteer, googleapis"
+    },
+
+    {
+        image:"./tic-tac-toe.png",
+        title:"Ecommerce",
         description:"Juego",
         lenguajes:"Html, Css y Javascript"
     },
 
     {
         image:"./tic-tac-toe.png",
-        title:"Tic Tac Toe",
-        description:"Juego",
+        title:"Criptomonedas",
+        description:"Criptomonedas",
         lenguajes:"Html, Css y Javascript"
     },
-
-    {
-        image:"./tic-tac-toe.png",
-        title:"Tic Tac Toe",
-        description:"Juego",
-        lenguajes:"Html, Css y Javascript"
-    },
-
-    {
-        image:"./tic-tac-toe.png",
-        title:"Tic Tac Toe",
-        description:"Juego",
-        lenguajes:"Html, Css y Javascript"
-    },
-
+    //login con mongo y express
 ]
