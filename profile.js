@@ -3,67 +3,74 @@ export const skills = [
         skill: "Html",
         porcentaje: 100,
         image:"./html.png",
-        description:"holis"
+        tecnologies: "front-end",
     },
 
     {
         skill: "Css",
         porcentaje: 100,
         image:"./css-3.png",
-        description:"holis"
+        tecnologies: "front-end",
     },
 
     {
         skill: "Javascript",
         porcentaje: 80,
         image:"./js.png",
-        description:"holis"
+        tecnologies: "front-end",
     },
 
     {
         skill: "React",
         porcentaje: 70,
         image:"./react.png",
-        description:"holis"
+        tecnologies: "front-end",
     },
 
     {
         skill: "NodeJs",
         porcentaje: 60,
-        image:"./node.png"
+        image:"./node.png",
+        tecnologies: "back-end",
     },
 
     {
         skill: "Express",
         porcentaje: 60,
         image:"./express.png",
-        description:"holis"
+        tecnologies: "back-end",
     },
 
     {
         skill: "MongoDB",
         porcentaje: 30,
         image:"./mongo2.png",
-        description:"holis"
+        tecnologies: "base de datos",
     },
 
     {
         skill: "Next",
         porcentaje: 20,
         image:"./next.png",
-        description:"holis"
+        tecnologies: "front-end",
     },
     {
         skill: "Firebase",
         porcentaje: 20,
         image:"./firebase.png",
-        description:"holis"
+        tecnologies: "base de datos",
     },
     {
         skill: "Git",
         porcentaje: 20,
         image:"./git.png",
-        description:"holis"
+        tecnologies: "otros",
+    },
+    {
+        skill: "Notion",
+        porcentaje: 20,
+        image:"./notion.png",
+        tecnologies: "otros",
     },
 ];
 
@@ -107,28 +114,28 @@ export const projects = [
     },
     
     {
-        image:"./tic-tac-toe.png",
+        image:"./app-clima.png",
         title:"App Clima",
         description:"metereología",
         lenguajes:"React, Vite"
     },
 
     {
-        image:"./tic-tac-toe.png",
+        image:"./web-scraping.png",
         title:"Web Scraping",
         description:"Scraping",
         lenguajes:"Express, firebase, libreria puppeteer, googleapis"
     },
 
     {
-        image:"./tic-tac-toe.png",
+        image:"./ecommerce.png",
         title:"Ecommerce",
         description:"Juego",
         lenguajes:"Html, Css y Javascript"
     },
 
     {
-        image:"./tic-tac-toe.png",
+        image:"./criptomoneda.png",
         title:"Criptomonedas",
         description:"Criptomonedas",
         lenguajes:"Html, Css y Javascript"

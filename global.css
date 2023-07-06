@@ -8,8 +8,12 @@ div#__next > div
 }
 
 .overflow {
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
+}
+
+.card-img{
+    height: 300px;
 }
 
 .overflow .card-img {
@@ -27,8 +31,8 @@ div#__next > div
 }
 
 #nprogress .spinner-icon {
-    border-top-color: #ff5357;
-    border-left-color: #ff5357;
+    border-top-color: #ff5357 !important;
+    border-left-color: #ff5357 !important;
 }
 
 
@@ -51,7 +55,7 @@ div#__next > div
 .links-contacto {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 li {
@@ -123,4 +127,16 @@ li {
 
 .section-height {
     height: 100vh;
+}
+
+.container-form {
+    background-color: #333;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
