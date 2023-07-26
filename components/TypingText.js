@@ -23,7 +23,6 @@ const TypingText = () => {
 
   const renderText = () => {
     return typingText.split('').map((char, index) => {
-       { console.log(index)}
       if (char === ' ') {
         return <span key={index}>&nbsp;</span>;
       } else if (char === 'M' || char === 'E' || char === 'R' || char === 'N'){

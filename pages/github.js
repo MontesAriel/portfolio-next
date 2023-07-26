@@ -12,19 +12,18 @@ const Github = ({user, statusCode}) =>{
         <> 
             <Layout footer={false} dark={true}>
                 <div className="row">
-                    <div className="col-md-4 offset-md-4">
-                        <div className="card card-body text-center">
+                    <div  className="col-md-4 offset-md-4">
+                        <div 
+                            style={{background:'#333', color:"#fff", borderRadius:'10px', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}} 
+                            className="card card-body text-center"
+                        >
                             <h1>{user.name}</h1>
                             <img src={user.avatar_url} alt="avatar github"/>
                             <p>{user.bio}</p>
+
                             <Link 
-                                href={user.blog} 
-                                target="_blank" 
-                                className="btn btn-outline-secondary my-2">
-                               Mi Blog
-                            </Link>
-                            <Link 
-                                href={user.html_url} 
+                                href={user.html_url}
+                                style={{color:'#fff'}} 
                                 target="_blank" 
                                 className="btn btn-outline-secondary my-2">
                                 Ir al Github
