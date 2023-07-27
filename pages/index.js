@@ -11,10 +11,16 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-
-
+import  Button  from "@mui/material/Button";
+import { useTheme } from "@mui/material/styles";
+import  useMediaQuery  from "@mui/material/useMediaQuery";
+import LockIcon from '@mui/icons-material/Lock';
+import { Tooltip } from "@mui/material";
 
 const Index = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const observerOptions = {
@@ -84,11 +90,11 @@ const Index = () => {
 
   return (
     <>
-      <Layout className="container">
+      <Layout className="container-layout">
         {/* section card image */}     
           <NavbarDesplegable activeMenuItem={activeMenuItem} handleMenuItemClick={handleMenuItemClick} />
-        <section id="sobre-mi" className="section section-1">
-          <div className="col-md-12">
+        <section id="sobre-mi" style={{height:'100%'}} >
+          <div>
             <div style={{ color: "white" }}>
               <div className="row">
                 <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
@@ -99,11 +105,12 @@ const Index = () => {
                   <h3 className="subtitulo">Desarrollador full stack <span style={{color:"#ff5357"}}>MERN</span></h3>
                 </div>
 
-                <div className="sobre-mi section-content">
-                  <p>
-                    Tengo 27 años, Vivo en Argentina, y hace aproximadamente dos años, entré al mundo IT. Hoy puedo decir
-                    que soy un desarrollador full stack (MERN), pero que me gusta más el front. Tengo muchas ganas de seguir aprendiendo y ganar nuevas experiencias.
-                    Me considero una persona emprendedora, visionaria, proactiva, que le gusta trabajar tanto en equipo como en forma individual y con ganas de superarme con excelencia mis propios límites.
+                <div className="sobre-mi ">
+                  <p style={{textAlign:'center'}}>
+                    Soy un apasionado desarrollador Front-end con más de dos años de experiencia en el mundo IT. Mi enfoque se centra en crear interfaces atractivas y experiencias envolventes para los usuarios. Resido en Argentina y tengo un espíritu emprendedor y proactivo.
+                    Siempre en busca de nuevos aprendizajes y desafíos, disfruto trabajando tanto en equipo como de manera individual para lograr resultados excepcionales. Mi objetivo es superar mis límites con excelencia en cada proyecto.
+                    Gracias por visitar mi perfil y explorar mi trabajo. Espero tener la oportunidad de colaborar juntos.
+                    
                   </p>
               
               </div>
@@ -122,7 +129,7 @@ const Index = () => {
 
         {/* segunda seccion */}
         <section id="skills" style={{ margin: '200px 0' }}>
-          <div className="col-md-12">
+          <div className="col-md-12" style={{margin:'0 auto', display:'flex', justifyContent:'center',}}>
             <div className="card-body">
               <h3 style={{ color: 'white', textAlign:'center', marginBottom:'40px' }}>Skills</h3>
 
@@ -201,9 +208,10 @@ const Index = () => {
                 <Grid sx={{ flexGrow: 1 }} container spacing={2}>
                 <Grid item xs={12}>
                 <Grid container justifyContent="center" spacing={2}>
-                {projects.map(({ image, title, description, lenguajes, href }, i) => {
+                {projects.map(({ image, title, description, lenguajes, href, page }, i) => {
                   return (
                     <Grid item key={i}>
+                      <Link href={href} style={{textDecoration:'none'}}>
                         <Paper sx={{
                             height: 500,
                             width: 400,
@@ -214,12 +222,41 @@ const Index = () => {
                           <img src={image} alt="projects portfolio" className="card-img" />
                         </div>
                         <div style={{color:"white", textAlign:"center", marginTop:"10px"}}>
-                          <h6 style={{fontSize:"21px", color:"#ff5357"}}>{title}</h6>
+                          <h6 style={{fontSize:"21px", color:"#ff5357"}}>{title} {title === "Web Scraping" ? <LockIcon /> : null}</h6>
+                        
                           <p>{description}</p>
                           <p>{lenguajes}</p>
-                          <Link href={href}>Ver más</Link>
+                         
+                        {title !== "Web Scraping" ? 
+                          <>
+                            <Link href={href}>
+                              <Button className="button-ver-mas" variant="contained">Ver código</Button>  
+                            </Link> 
+                            {page ?    
+                              <Link href={page}>
+                                <Button className="button-ver-pagina" color="error" variant="contained">Ver página</Button>
+                              </Link>                       
+                              : null
+                            }                         
+                            </>
+                          : 
+                          <>
+                           <Link href={href}>
+                              <Tooltip title="Código privado. Comunicarse si se quiere un trabajo similar." placement="top">
+                                <button className="button-scraping">VER CÓDIGO</button>
+                              </Tooltip>
+                            </Link>                           
+                           
+                            <Tooltip title="trabajo bloqueado" placement="bottom">
+                              
+                                <button className="button-scraping" style={{marginTop:2}}>VER PÁGINA</button>
+                            </Tooltip>                        
+                          </>
+                         
+                        }
                         </div>
                       </Paper>
+                      </Link>
                     </Grid>
                   );
                 })}

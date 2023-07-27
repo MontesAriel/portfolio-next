@@ -1,10 +1,14 @@
 
-body, html, body > div:first-child,
+body,  body > div:first-child,
 div#_next,
 div#__next > div
 {
     height: 100%;
     background-color: #373a3c;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .overflow {
@@ -144,4 +148,29 @@ li {
 
 .experienciasContainer {
     margin-top: 100px;
+}
+
+.button-ver-mas {
+    font-size: 13px;
+    width: 100%;
+  
+}
+
+.button-ver-pagina {
+    margin-top: 5px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.button-scraping {
+    background-color: #373a3c;;
+    width: 100%;
+    font-size: 13px;
+    color: #ccc;
+    border: none;
+    padding: 8px;
+}
+
+.container-layout {
+   margin: 0 auto;
 }

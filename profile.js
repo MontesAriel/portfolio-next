@@ -113,7 +113,7 @@ export const projects = [
         title:"Unique Trips",
         description:"Agencia de Viajes",
         lenguajes:"Html, Css y Javascript",
-        href:"https://github.com/MontesAriel/Unique-Trips-2"
+        href:"https://github.com/MontesAriel/Unique-Trips-2",
     },
     
     {
@@ -121,7 +121,7 @@ export const projects = [
         title:"Tic Tac Toe",
         description:"Juego",
         lenguajes:"Html, Css y Javascript",
-        href:"https://github.com/MontesAriel/Tic-Tac-Toe"
+        href:"https://github.com/MontesAriel/Tic-Tac-Toe",
     },
     
     {
@@ -129,7 +129,7 @@ export const projects = [
         title:"App Clima",
         description:"metereología",
         lenguajes:"React, Vite",
-        href:"https://github.com/MontesAriel/app-clima"
+        href:"https://github.com/MontesAriel/app-clima",
     },
 
     {
@@ -137,23 +137,24 @@ export const projects = [
         title:"Web Scraping",
         description:"Scraping",
         lenguajes:"Express, firebase, libreria puppeteer, googleapis",
-        href:"https://github.com/MontesAriel/Vivet-WebScraping"
+        href:"https://github.com/MontesAriel/Vivet-WebScraping",
     },
 
     {
         image:"./ecommerce.png",
         title:"Ecommerce",
-        description:"Juego",
+        description:"Ecommerce de comida rápida",
         lenguajes:"Html, Css y Javascript",
-        href:"https://github.com/MontesAriel/ecommerce-food"
+        href:"https://github.com/MontesAriel/ecommerce-food",
+        page:"https://food-ecommerce-los6g8rkz-montesariel.vercel.app/",
     },
 
     {
-        image:"./criptomoneda.png",
+        image:"./calendar.png",
         title:"Calendar",
         description:"Organizador del día (en proceso)",
         lenguajes:"React Native",
-        href:"https://github.com/MontesAriel/App-Calendar"
+        href:"https://github.com/MontesAriel/App-Calendar",
     },
     //login con mongo y express
 ]
