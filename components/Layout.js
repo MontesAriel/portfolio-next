@@ -7,7 +7,7 @@ import 'nprogress/nprogress.css';
 
 
 
-const Layout = ({ children, footer = true, dark = false }) => {
+const Layout = ({ children, footer = true }) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Layout = ({ children, footer = true, dark = false }) => {
   }, []);
 
   return (
-    <div className={dark ? "bg-dark" : ""}>
+    <div >
       <header>
         <Navbar />
       </header>
@@ -41,7 +41,7 @@ const Layout = ({ children, footer = true, dark = false }) => {
       {footer && (
         <footer className="bg-dark text-light text-center">
           <div className="container p-4">
-            <h4>&copy; 2023 Portfolio Ariel Montes</h4>
+            <h4>&copy; 2023 Portfolio <span style={{color:'#ff5357'}}>Ariel Montes</span></h4>
             <p>todos los derechos reservados.</p>
           </div>
         </footer>

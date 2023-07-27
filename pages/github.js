@@ -10,8 +10,8 @@ const Github = ({user, statusCode}) =>{
 
     return(
         <> 
-            <Layout footer={false} dark={true}>
-                <div className="row">
+            <Layout footer={true} >
+                <div style={{width:700}}>
                     <div  className="col-md-4 offset-md-4">
                         <div 
                             style={{background:'#333', color:"#fff", borderRadius:'10px', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}} 

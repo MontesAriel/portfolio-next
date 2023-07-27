@@ -47,76 +47,75 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
 
   return (
     <div className="container-form">
-    <h3 style={{color:"white", display:"flex", justifyContent:"center"}}>Contacto</h3>
+    <h3 style={{ color: "white", display: "flex", justifyContent: "center" }}>
+      Contacto
+    </h3>
     <div className="row justify-content-center">
       <div className="col-md-6">
-          <form onSubmit={handleSubmit}>
-          <div className="form-group row" style={{ margin: '10px 0'}}>
-          <div className="col-md-6" style={{padding:'0 5px 0 0'}}>
-            <input
-              type="text"
-              placeholder="Nombre"
-              id="nombre"
-              className="form-control"
-              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color:"white" }}
-              value={nombre}
-              onChange={(e) => setNombre(e.target.value)}
-            />
-          </div>
-          <div className="col-md-6" style={{padding:0}}>
-            <input
-              type="celular"
-              placeholder="Celular"
-              id="celular"
-              className="form-control"
-              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px',  color:"white" }}
-              value={celular}
-              onChange={(e) => setCelular(e.target.value)}
-            />
-          </div>
-        </div>
-            <div className="form-group" style={{margin:'10px 0'}}>
-              <input
-                type="email"
-                placeholder="Email"
-                className="form-control"
-                id="email"
-                style={{background:"#373a3c", border:"1px solid #ff5357", borderRadius:'5px', color:"white" }}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-
-            <div className="form-group" style={{margin:'10px 0'}}>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group row" style={{ margin: '10px 0' }}>
+            <div className="col-6" style={{ padding: '0 5px 0 0' }}>
               <input
                 type="text"
-                placeholder="Asunto"
+                placeholder="Nombre"
+                id="nombre"
                 className="form-control"
-                id="asunto"
-                style={{background:"#373a3c", border:"1px solid #ff5357", borderRadius:'5px', color:"white" }}
-                value={asunto}
-                onChange={(e) => setAsunto(e.target.value)}
+                style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+                value={nombre}
+                onChange={(e) => setNombre(e.target.value)}
               />
             </div>
-            <div className="form-group" style={{margin:'10px 0'}}>
-              <textarea
+            <div className="col-6" style={{ padding: 0 }}>
+              <input
+                type="celular"
+                placeholder="Celular"
+                id="celular"
                 className="form-control"
-                id="mensaje"
-                style={{background:"#373a3c", border:"1px solid #ff5357", borderRadius:'5px', color:"white" }}
-                placeholder="Mensaje.."
-                value={mensaje}
-                onChange={(e) => setMensaje(e.target.value)}
-              ></textarea>
+                style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+                value={celular}
+                onChange={(e) => setCelular(e.target.value)}
+              />
             </div>
-            <button type="submit" className="btn btn-primary w-100 text-center" style={{borderRadius:'5px', fontSize:'18px'}}>Enviar</button>
-          </form>
+          </div>
+          <div className="form-group" style={{ margin: '10px 0' }}>
+            <input
+              type="email"
+              placeholder="Email"
+              className="form-control"
+              id="email"
+              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="form-group" style={{ margin: '10px 0' }}>
+            <input
+              type="text"
+              placeholder="Asunto"
+              className="form-control"
+              id="asunto"
+              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+              value={asunto}
+              onChange={(e) => setAsunto(e.target.value)}
+            />
+          </div>
+          <div className="form-group" style={{ margin: '10px 0' }}>
+            <textarea
+              className="form-control"
+              id="mensaje"
+              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+              placeholder="Mensaje.."
+              value={mensaje}
+              onChange={(e) => setMensaje(e.target.value)}
+            ></textarea>
+          </div>
+          <button type="submit" className="btn btn-primary w-100 text-center" style={{ borderRadius: '5px', fontSize: '18px' }}>Enviar</button>
+        </form>
       </div>
-      {enviado &&  <ToastContainer />}
+      {enviado && <ToastContainer />}
     </div>
-    
-
-
   </div>
+  
   );
 }
 
