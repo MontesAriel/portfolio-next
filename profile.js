@@ -82,7 +82,7 @@ export const experiences = [
         img:"./vivet-logo.png",
         alt:"logo Vivet SRL",
         href:"https://vivetmarket.com/app/homepage",
-        description:"Integración de soluciones con React Hook Context - React Router, hooks, etc. Integración de Material UI Mantenimiento de Ecommerce Web Scraping Panel para administradores y operarios. Tecnologias utilizadas: Javascript, React, MongoDB, Firebase admin, NodeJs, Express",
+        description:"Integración de soluciones con React Hook Context - React Router, hooks, etc. Integración de Material UI Mantenimiento de Ecommerce. Web Scraping. Panel para administradores y operarios. Tecnologias utilizadas: Javascript, React, MongoDB, Firebase admin, NodeJs, Express.",
     },
 
     {
@@ -92,7 +92,7 @@ export const experiences = [
         alt:"logo Coder House",
         href:"https://www.coderhouse.com/",
         position:"Tutor Javascript",
-        description:"Acompañamiento a los alumnos en las clases despejando dudas y/o consultas. Tomar asistencia. Corregir los desafios. Acompañarlos en su proceso de aprendizaje a lo largo del curso",
+        description:"Acompañamiento a los alumnos en las clases despejando dudas y/o consultas. Tomar asistencia. Corregir los desafios. Acompañarlos en su proceso de aprendizaje a lo largo del curso.",
     },
 
     {
@@ -117,11 +117,11 @@ export const projects = [
     },
     
     {
-        image:"./tic-tac-toe.png",
-        title:"Tic Tac Toe",
-        description:"Juego",
-        lenguajes:"Html, Css y Javascript",
-        href:"https://github.com/MontesAriel/Tic-Tac-Toe",
+        image:"./pelicula.png",
+        title:"App Peliculas",
+        description:"Listado de Peliculas",
+        lenguajes:"ReactJs",
+        href:"https://github.com/MontesAriel/peliculas",
     },
     
     {
