@@ -60,7 +60,7 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
                 placeholder="Nombre"
                 id="nombre"
                 className="form-control"
-                style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+                style={{ background: "transparent", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
                 value={nombre}
                 onChange={(e) => setNombre(e.target.value)}
               />
@@ -71,7 +71,7 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
                 placeholder="Celular"
                 id="celular"
                 className="form-control"
-                style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+                style={{ background: "transparent", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
                 value={celular}
                 onChange={(e) => setCelular(e.target.value)}
               />
@@ -83,7 +83,7 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
               placeholder="Email"
               className="form-control"
               id="email"
-              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+              style={{ background: "transparent", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -94,7 +94,7 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
               placeholder="Asunto"
               className="form-control"
               id="asunto"
-              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+              style={{ background: "transparent", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
               value={asunto}
               onChange={(e) => setAsunto(e.target.value)}
             />
@@ -103,7 +103,7 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
             <textarea
               className="form-control"
               id="mensaje"
-              style={{ background: "#373a3c", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
+              style={{ background: "transparent", border: "1px solid #ff5357", borderRadius: '5px', color: "white" }}
               placeholder="Mensaje.."
               value={mensaje}
               onChange={(e) => setMensaje(e.target.value)}

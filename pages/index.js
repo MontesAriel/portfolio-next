@@ -217,7 +217,7 @@ const Index = () => {
                             height: 500,
                             width: 400,
                             }}
-                            style={{background:"#333", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}
+                            style={{background:"transparent", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}
                         >
                         <div className="overflow">
                           <img src={image} alt="projects portfolio" className="card-img" />
