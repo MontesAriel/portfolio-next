@@ -13,7 +13,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import  Button  from "@mui/material/Button";
 import { useTheme } from "@mui/material/styles";
-import { LinkedIn, Instagram } from "@mui/icons-material";
+import { LinkedIn, Instagram, GitHub } from "@mui/icons-material";
 import LockIcon from '@mui/icons-material/Lock';
 import { Tooltip } from "@mui/material";
 
@@ -121,6 +121,9 @@ const Index = () => {
                 </Link>
                 <Link href="https://www.instagram.com/arieelmontes/" target="_blank" className="links">
                 Instagram <Instagram />
+                </Link>
+                <Link href="https://github.com/MontesAriel" target="_blank" className="links">
+                GitHub <GitHub />
                 </Link>
             </div>
         </section>
@@ -303,9 +306,7 @@ const Index = () => {
             </Card>
             )
           })}
-
         </section>
-
         <section id="contacto" style={{ margin: "220px 0" }} >
           <div >
             <FormContact />

@@ -5,6 +5,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import BuildIcon from '@mui/icons-material/Build';
 import ArticleIcon from '@mui/icons-material/Article';
 import EmailIcon from '@mui/icons-material/Email';
+import SchoolIcon from '@mui/icons-material/School';
 
 const NavbarDesplegable = () => {
   const [activeMenuItem, setActiveMenuItem] = useState('');

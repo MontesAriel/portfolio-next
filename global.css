@@ -3,8 +3,8 @@ body,  body > div:first-child,
 div#_next,
 div#__next > div
 {
+    background-image: linear-gradient(to top, #333333, #383838, #3d3d3d, #434343, #484848);
     height: 100%;
-    background-color: #373a3c;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -172,4 +172,8 @@ li {
 
 .container-layout {
    margin: 0 auto;
+}
+
+.github-container {
+    height: 100%;
 }
