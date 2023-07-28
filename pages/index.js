@@ -105,7 +105,7 @@ const Index = () => {
 
                 <div className="sobre-mi ">
                   <p style={{textAlign:'center'}}>
-                    Soy un desarrollador con más de dos años de experiencia en IT con preferencia al Front-End. 
+                    Soy un desarrollador con más de dos años de experiencia en IT, con preferencia al Front-End. 
                     Mi enfoque radica en crear interfaces atractivas y envolventes para los usuarios. 
                     Vivo en Argentina y me considero emprendedor y proactivo, siempre en busca de nuevos aprendizajes y desafíos. 
                     Disfruto trabajando tanto en equipo como de manera individual para lograr resultados excepcionales. 
