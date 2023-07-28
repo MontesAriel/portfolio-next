@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-dark ">
       <div className="container">
         <Link href="/" passHref className="navbar-brand">
             Portfolio

@@ -13,13 +13,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import  Button  from "@mui/material/Button";
 import { useTheme } from "@mui/material/styles";
-import  useMediaQuery  from "@mui/material/useMediaQuery";
+import { LinkedIn, Instagram } from "@mui/icons-material";
 import LockIcon from '@mui/icons-material/Lock';
 import { Tooltip } from "@mui/material";
 
 const Index = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -118,11 +116,11 @@ const Index = () => {
           </div>
           </div>
             <div className="links-contacto">
-                <Link href="https://www.linkedin.com/in/montesariel/" className="links">
-                Linkedin
+                <Link href="https://www.linkedin.com/in/montesariel/" target="_blank" className="links">
+                Linkedin <LinkedIn />
                 </Link>
-                <Link href="https://www.instagram.com/arieelmontes/" className="links">
-                Instagram
+                <Link href="https://www.instagram.com/arieelmontes/" target="_blank" className="links">
+                Instagram <Instagram />
                 </Link>
             </div>
         </section>
@@ -211,7 +209,7 @@ const Index = () => {
                 {projects.map(({ image, title, description, lenguajes, href, page }, i) => {
                   return (
                     <Grid item key={i}>
-                      <Link href={href} style={{textDecoration:'none'}}>
+                      <Link href={href}  target="_blank" style={{textDecoration:'none'}}>
                         <Paper sx={{
                             height: 500,
                             width: 400,
@@ -229,11 +227,11 @@ const Index = () => {
                          
                         {title !== "Web Scraping" ? 
                           <>
-                            <Link href={href}>
+                            <Link href={href}  target="_blank">
                               <Button className="button-ver-mas" variant="contained">Ver código</Button>  
                             </Link> 
                             {page ?    
-                              <Link href={page}>
+                              <Link href={page}  target="_blank">
                                 <Button className="button-ver-pagina" color="error" variant="contained">Ver página</Button>
                               </Link>                       
                               : null
@@ -241,7 +239,7 @@ const Index = () => {
                             </>
                           : 
                           <>
-                           <Link href={href}>
+                           <Link href={href}  target="_blank">
                               <Tooltip title="Código privado. Comunicarse si se quiere un trabajo similar." placement="top">
                                 <button className="button-scraping">VER CÓDIGO</button>
                               </Tooltip>
@@ -271,7 +269,7 @@ const Index = () => {
             return(
               <Card sx={{ display: 'flex', margin: '5px 0', padding: 5, background: '#333', color: '#fff' }}>
               <div style={{ width: '300px', flexShrink: 0, marginRight: 15, overflow: 'hidden' }}>
-                <Link href={href}>
+                <Link href={href}  target="_blank">
                   <CardMedia
                     component="img"
                     sx={{
