@@ -105,10 +105,12 @@ const Index = () => {
 
                 <div className="sobre-mi ">
                   <p style={{textAlign:'center'}}>
-                    Soy un apasionado desarrollador Front-end con más de dos años de experiencia en el mundo IT. Mi enfoque se centra en crear interfaces atractivas y experiencias envolventes para los usuarios. Resido en Argentina y tengo un espíritu emprendedor y proactivo.
-                    Siempre en busca de nuevos aprendizajes y desafíos, disfruto trabajando tanto en equipo como de manera individual para lograr resultados excepcionales. Mi objetivo es superar mis límites con excelencia en cada proyecto.
-                    Gracias por visitar mi perfil y explorar mi trabajo. Espero tener la oportunidad de colaborar juntos.
-                    
+                    Soy un desarrollador con más de dos años de experiencia en IT con preferencia al Front-End. 
+                    Mi enfoque radica en crear interfaces atractivas y envolventes para los usuarios. 
+                    Vivo en Argentina y me considero emprendedor y proactivo, siempre en busca de nuevos aprendizajes y desafíos. 
+                    Disfruto trabajando tanto en equipo como de manera individual para lograr resultados excepcionales. 
+                    Mi objetivo es superar mis límites con excelencia en cada proyecto. Gracias por visitar mi perfil y explorar mi trabajo. 
+                    ¡Espero la oportunidad de colaborar juntos!                 
                   </p>
               
               </div>
