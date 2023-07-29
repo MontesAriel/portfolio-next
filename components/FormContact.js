@@ -30,6 +30,7 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
         Email: email,
         Asunto: asunto,
         Mensaje: mensaje,
+        Celular: celular
       }),
     });
 
@@ -38,7 +39,9 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/mat
         setEmail('');
         setMensaje('');
         setAsunto('');
+        setCelular('')
         setEnviado(true);
+        
         toast.success('El mensaje ha sido enviado.');
     } else {
       toast.error('Error. No se pudo enviar el mensaje.')
